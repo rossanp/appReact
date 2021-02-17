@@ -4,6 +4,7 @@ import Primeiro from "./componentes/Primeiro" //sempre que puxar functions de ou
 import BomDia from "./componentes/BomDia"
 import {BoaTarde, BoaNoite} from "./componentes/Multiplos" //Para não ficar importando cada function do arquivo externo, usa-se um nome aleatório no lugar dos nomes sem chaves e abaixo, dentro da div coloque <NomeAleatorio.BoaTarde />. No final do arquivo importado, tem que estar exportando as functions.
 import Saudacao from "./componentes/Saudacao"
+import Pai from "./componentes/Pai"
 
 ReactDOM.render(<h1>Hello World!!!</h1>, document.getElementById('root'))
 ReactDOM.render(<h3>Aprendendo React na marra!!!</h3>, document.getElementById('root1'))
@@ -16,3 +17,5 @@ ReactDOM.render(
     </div>
 , document.getElementById("root3"))
 ReactDOM.render(<Saudacao />, document.getElementById("root4"))
+/* Instanciando os nomes do Pai junto com os Filhos somente pela classe PAI */
+ReactDOM.render(<Pai nome = "Linus" sobrenome = "Cast" />, document.getElementById("root5"))
